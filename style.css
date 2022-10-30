@@ -469,7 +469,7 @@ main .reset.simpan .btn.reset-btn:hover{
         align-items: center;
 		width: 80%;
         height: 30px;
-        border: 2px solid red;
+        border: 2px solid blue;
         margin: 5px 100px;
         
 	}
