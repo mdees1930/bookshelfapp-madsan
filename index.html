@@ -1,0 +1,113 @@
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Bookshelf Apps</title>
+		<script
+			src="https://kit.fontawesome.com/f40798ee08.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav>
+			<div class="logo">
+				Bookshelf Apps
+			</div>
+			<div class="search-container">
+				
+				<form id="searchForm" class="searchForm">
+					<input
+						class="form-input"
+						type="search"
+						name="searchTitle"
+						id="searchTitle"
+						placeholder="Ketik Judul Buku"
+					/>
+					<button type="submit" class="btn search-btn">
+						<i class="fas fa-search"></i>
+					</button>
+				</form>
+			</div>
+
+			<div id="btn-input" class="btn-input">
+            	<ul>
+                	<li>
+						
+						<button a href="#" type="button">
+						    <label>Input Data Buku</label>
+						</a>
+						</button>
+						
+						
+					</li>
+                
+            	</ul>
+			</div>
+		</nav>
+
+		<main>
+					
+			<div class="modul" id ="modul">
+				<form class="inputDataBuku" id="inputDataBuku">
+					<div class="close" id="close">
+						<h5> X [Close]</h5>
+					</div>
+						
+					<h2>Input Data Buku</h2>
+					
+					<div class="title">
+						<label for="title" class="form-label">Judul Buku</label>
+						<input type="text" name="title" id="title" class="form-input" required/>
+					</div>
+					<div class="author">
+						<label for="author" class="form-label">Penulis</label>
+						<input
+							type="text"
+							name="author"
+							id="author"
+							class="form-input"
+							required
+						/>
+					</div>
+					<div class="year">
+						<label for="year" class="form-label">Tahun</label>
+						<input
+							type="number"
+							name="year"
+							id="year"
+							class="form-input"
+							required
+						/>
+					</div>
+					<div class="reset simpan">
+						<button
+							type="button"
+							class="btn reset-btn"
+							
+						>
+							Reset
+						</button>
+						<button type="submit" name="submit" class="btn save-btn">Simpan Data</button>
+					</div>
+				</form>
+			</div>
+			
+			<section class="book_shelf">
+				<h2>Belum selesai dibaca</h2>
+			    <div id="incompleteBookshelfList" class="book_list"></div>
+			</section>
+			<section class="book_shelf">					
+				<h2>Selesai dibaca</h2>
+				<div id="completeBookshelfList" class="book_list"></div>
+			</section>				
+
+		</main>
+		
+		
+		<script src="main.js"></script>
+	</body>
+</html>

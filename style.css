@@ -1,0 +1,538 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-image: url("assets/images/BOOKSHELF-STYLING-683x1024.jpg");
+    padding-bottom: 500px;
+}
+
+h1,
+h2 {
+	font-size: 1rem;
+	font-weight: bold;
+	
+}
+
+input {
+	cursor: text;
+}
+
+
+.close h5{
+    display: inline;
+    float: right;
+
+    cursor: pointer;
+
+}
+
+
+.close h5:hover{
+    color : red;
+}
+
+nav {
+	display: flex;
+    width: 100%;
+    background: linear-gradient(to top, white, blue);
+    position: relative;
+    justify-content: space-around;
+    text-align: center;
+	align-items: center;
+    padding: 15px 30px;
+}
+
+
+
+nav .logo{
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+}
+
+
+nav .logo:hover{
+    color: aliceblue;
+}
+
+
+nav .searchForm{
+    display: flex;
+	margin: auto 0;
+    height: 35px;
+    line-height: 35px;
+}
+
+
+nav .searchForm input{
+    border: none;
+    padding: 0 10px;
+    background: white;
+    height: 100%;
+    font-size: 18px;
+    width: 375px;
+}
+
+
+nav .searchForm .btn{
+    color:black;
+    font-size: 20px;
+    background: white;
+	border: 1px solid white;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    padding: 5px;
+	justify-content: center;
+    align-items: center;
+}
+
+
+nav .searchForm .btn::after{
+    height: 100%;
+    width: 0%;
+    content: '';
+    background: #078ce4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+nav .searchForm .btn:hover::after{
+    width: 100%;
+}
+
+
+nav .btn-input button{
+    display: flex;
+	padding: 5px;
+	background: transparent;
+	border: 3px solid cornflowerblue;
+	text-decoration: none;
+    border-radius: 10px;
+
+}
+
+
+nav .btn-input button:hover{
+    background: #078ce4;
+	text-decoration: none;
+	
+}
+
+
+nav ul{
+    display: flex;
+	justify-content:space-between;
+    list-style: none;
+    margin: auto 0;
+	
+}
+
+
+nav ul button label{
+    box-sizing: border-box;
+	padding: 5px;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+	
+	
+}
+
+
+
+main {
+    
+    display: flex;
+	align-items: center;
+    justify-content: center;
+	flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: relative;
+    padding: 5px;
+    height: 100%;
+}
+
+
+
+main:before{
+	content: '';
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    z-index: -1;
+    border: 1px solid white;
+	
+} 
+
+
+main #modul{
+	display: none;
+	background: transparent;
+    color: white;
+	margin: 16px 0 0 0;
+    border: 2px solid white;
+    padding: 16px;
+    border-radius: 10px;
+	justify-content: center;
+	text-align: center;
+	width: 35%;
+	
+} 
+
+
+
+
+main #modul input{
+	font-size: 20px;
+    width: 100%;
+	
+} 
+
+
+
+main .form-label{
+    display: flex; 
+    border: 1px solid white;
+    justify-content: left;
+	align-items: center;
+	
+} 
+
+
+main .reset.simpan{
+	display: flex;
+	justify-content: space-between;
+	
+	
+}
+
+
+
+main .reset.simpan button{
+	padding: 2px;
+	font-size: 15px;
+	font-weight: bold;
+    border-radius: 5px;
+}
+
+
+main .reset.simpan .btn.save-btn:hover{
+	color: aqua;
+	background: #585858;
+	
+}
+
+
+main .reset.simpan .btn.reset-btn:hover{
+	color: red;
+	background: #585858;
+	
+}
+
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    border: 1px solid white;
+    padding: 16px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.book_shelf > h2 {
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+.input_section > h2:hover, .book_shelf > h2:hover, .modul h2:hover {
+    color: aqua;
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+    color: white;
+}
+
+
+.book_shelf div .inner{
+    width: fit-content;
+}
+
+.book_shelf > .book_list > .item{
+    padding: 8px 16px 16px 16px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.book_shelf .book_list .item p {
+    margin: 8px 0;
+    color: white;
+}
+
+.book_shelf .book_list .item button {
+   
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+
+.book_shelf .book_list .item .green{
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    background: green;
+}
+
+.book_shelf .book_list .item .green:hover{
+    background: darkgreen;
+}
+
+
+.book_shelf .book_list .item .red{
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    background: red;
+}
+
+
+.book_shelf .book_list .item .red:hover{
+    background: darkred;
+}
+
+.book_shelf .book_list .item {
+    border: 2px solid white
+    
+    
+}
+
+
+
+
+
+/* Media Query*/
+@media screen and (max-width: 992px) {
+   
+	.books_list h2 {
+		margin-top: 2rem;
+	}
+
+    main #modul, .book_shelf{
+        width: 30%;
+    }
+
+    
+    .book_shelf{
+        width: fit-content;
+    }
+    
+    .book_shelf div .inner{
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 850px) {
+	
+	.search-container,
+	.books_list {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	#searchForm input {
+		width: 100%;
+	}
+
+    main #modul, .book_shelf{
+        width: 30%;
+    }
+
+    .book_shelf{
+        width: fit-content;
+    }
+    
+    .book_shelf div .inner{
+        width: fit-content;
+    }
+
+	.books_list{
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.nav {
+		padding-left: 1rem;
+	}
+
+   main .modul{
+    width: 50%;
+   }
+
+    .logo h2, .btn-input {
+		width: 30%;
+        height: 50%;
+        font-size: 15px;
+	}
+
+    
+    .book_shelf{
+        width: fit-content;
+    }
+
+    .book_shelf div .inner{
+        width: fit-content;
+    }
+
+
+}
+
+
+@media screen and (max-width: 570px) {
+	.nav {
+		padding-left: 1rem;
+	}
+    
+    .logo h2, .btn-input {
+		width: 20%;
+        height: fit-content;
+        font-size: 12px;
+	}
+
+    
+    main #modul{
+        width: fit-content;
+    }
+
+   main .inputDataBuku{
+    width: 100%;
+   }
+
+   
+   main .modul .book_shelf{
+    width: 100%;
+   }
+        
+    main .reset.simpan button{
+	    padding: 2px;
+	    font-size: 12px;
+	    font-weight: bold;
+    }
+
+    .book_shelf h2, .book_list p{
+        padding: 8px 16px 16px 16px;
+        border: 1px solid white;
+        border-radius: 2px;
+        margin: 0 auto;
+        font-size: 12px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .book_shelf{
+        width: fit-content;
+    }
+    
+    .book_shelf div .inner{
+        width: fit-content;
+    }
+
+
+} 
+
+
+
+@media screen and (max-width: 320px) {
+	.nav {
+		padding-left: 1rem;
+	}
+    
+    .logo h2, .btn-input {
+		width: 20%;
+        height: fit-content;
+        font-size: 12px;
+	}
+
+    main #modul{
+        width: fit-content;
+    }
+    
+   
+   main .modul .book_shelf{
+    width: 100%;
+   }
+    
+    main .inputDataBuku{
+        width: fit-content;
+        border: 3px solid green;
+    }
+/* 
+
+    main .reset.simpan button{
+	    padding: 2px;
+	    font-size: 12px;
+	    font-weight: bold;
+        
+    } */
+
+    .book_shelf h2, .book_list p{
+        padding: 8px 16px 16px 16px;
+        border: 1px solid white;
+        border-radius: 2px;
+        margin: 0 auto;
+        font-size: 12px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .book_shelf{
+        width: fit-content;
+    }
+    
+    .book_shelf div .inner{
+        width: fit-content;
+    }
+
+}
