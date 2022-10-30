@@ -194,7 +194,7 @@ main #modul{
 	background: transparent;
     color: white;
 	margin: 16px 0 0 0;
-    border: 3px solid yellow;
+    border: 2px solid white;
     padding: 16px;
     border-radius: 10px;
 	justify-content: center;
@@ -407,11 +407,23 @@ main .reset.simpan .btn.reset-btn:hover{
 		padding-left: 1rem;
 	}
 
-   main .modul{
-    width: 50%;
+    
+    nav ul{
+        display : inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    main #modul{
+        width: fit-content;
+    }
+
+   main .inputDataBuku{
+    width: 100%;
    }
 
-    .logo h2, .btn-input {
+    .logo , .btn-input {
 		width: 30%;
         height: 50%;
         font-size: 15px;
@@ -430,16 +442,49 @@ main .reset.simpan .btn.reset-btn:hover{
 }
 
 
-@media screen and (max-width: 570px) {
-	.nav {
-		padding-left: 1rem;
-	}
+@media screen and (max-width: 520px) {
+	
+    nav {
+        display: block;
+        width: 100%;
+        background: linear-gradient(to top, white, blue);
+        position: relative;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2px;
+    }
+    nav .logo{
+        display: inline;
+    }
+
+    nav ul{
+        display : inline-block;
+        justify-content: center;
+        align-items: center;
+    }
     
-    .logo h2, .btn-input {
-		width: 20%;
-        height: fit-content;
-        font-size: 12px;
+    nav .btn-input button{
+        justify-content: center;
+        align-items: center;
+		width: 80%;
+        height: 30px;
+        border: 2px solid red;
+        margin: 5px 100px;
+        
 	}
+
+    
+        
+    nav .btn-input button label{
+        display: inline-block;
+        box-sizing: border-box;
+	    padding-left: 5px;
+	    font-size: 18px;
+	    color: white;
+	    cursor: pointer;
+        
+    }
 
     
     main #modul{
@@ -485,15 +530,45 @@ main .reset.simpan .btn.reset-btn:hover{
 
 
 @media screen and (max-width: 320px) {
-	.nav {
-		padding-left: 1rem;
-	}
+	
+    nav {
+        display: block;
+        width: 100%;
+        background: linear-gradient(to top, white, blue);
+        position: relative;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2px;
+    }
+
+    nav ul{
+        display : inline-block;
+        justify-content: center;
+        align-items: center;
+    }
     
-    .logo h2, .btn-input {
-		width: 20%;
-        height: fit-content;
-        font-size: 12px;
+    nav .btn-input button{
+        justify-content: center;
+        align-items: center;
+		width: 80%;
+        height: 30px;
+        border: 2px solid red;
+        margin: 5px 60px;
+        
 	}
+
+    
+        
+    nav .btn-input button label{
+        display: inline-block;
+        box-sizing: border-box;
+	    padding-left: 5px;
+	    font-size: 15px;
+	    color: white;
+	    cursor: pointer;
+        
+    }
 
     main #modul{
         width: fit-content;
@@ -506,7 +581,7 @@ main .reset.simpan .btn.reset-btn:hover{
     
     main .inputDataBuku{
         width: fit-content;
-        border: 3px solid green;
+        border: 3px solid white;
     }
 /* 
 
